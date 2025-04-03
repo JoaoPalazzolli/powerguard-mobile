@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telemetria - Consumo de Energia"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Subtítulo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relatórios"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botão Gerar Relatório -->
+        <Button
+            android:id="@+id/btnGerarRelatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerar Relatório"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"/>
+
+        <!-- Card de Economia Estimada -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Economia Estimada"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvEconomia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$ 150,00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <!-- Card de Consumo Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consumo Total"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvConsumoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="300 kWh"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Card de Status dos Dispositivos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status dos Dispositivos"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ligados:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDispositivosLigados"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:gravity="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Desligados:"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvDispositivosDesligados"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

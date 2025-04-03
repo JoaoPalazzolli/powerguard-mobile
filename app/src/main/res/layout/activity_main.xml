@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainActivity"
+    android:background="#34495e">
+
+
+    <!-- Botão de menu hambúrguer -->
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="64dp"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Menu"
+        android:scaleType="fitCenter"
+        android:src="@drawable/hamburger_button_menu_icon_155296"
+        app:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:clipToOutline="true"
+        android:contentDescription="Logo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_powerguard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCentral"
+        android:scaleX="2.5"
+        android:scaleY="3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/grafico_barras"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagem Central"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>
