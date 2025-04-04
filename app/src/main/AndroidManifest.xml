@@ -16,7 +16,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
@@ -34,13 +33,13 @@
         android:theme="@style/Theme.Powerguard"
         tools:targetApi="31">
         <activity
+            android:name=".RelatorioActivity"
+            android:exported="false" />
+        <activity
             android:name=".DispositivosDetalhesActivity"
             android:exported="false" />
         <activity
             android:name=".DispositivosActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RelatorioActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -51,6 +50,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
