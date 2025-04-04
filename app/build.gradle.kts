@@ -44,8 +44,6 @@ dependencies {
 
     implementation(libs.itextpdf)
 
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-
     // Biblioteca para fazer requisições HTTP
     implementation(libs.okhttp)
 
